@@ -37,7 +37,8 @@ namespace EventHandling
         protected override void OnDoubleTapped(DoubleTappedRoutedEventArgs e)
         {
             //Window.Current.Close(); This is not allowed.
-            App.Current.Exit(); // This will not close the app. If you want to sell the app, you can not close an app.
+            //App.Current.Exit(); // This will not close the app. If you want to sell the app, you can not close an app.
+            this.Frame.Navigate(typeof(BothChanged));
         }
     }
 }
